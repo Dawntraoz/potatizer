@@ -1,0 +1,2 @@
+# potatizer
+Potato mood randomizer  🥔
