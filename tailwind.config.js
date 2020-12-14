@@ -1,14 +1,22 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   theme: {
     extend: {
-      zIndex: {
-        '-1': '-1',
+      fontFamily: {
+        title: ["'Quicksand'", 'sans-serif'],
+      },
+      width: {
+        panel: '360px',
+      },
+      colors: {
+        lime: colors.lime,
       },
       scale: {
-       '175': '1.75',
-       '200': '2',
-       '350': '3.5',
-      }
+        175: '1.75',
+        200: '2',
+        350: '3.5',
+      },
     },
   },
 }
