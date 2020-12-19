@@ -1,1 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+/* Buttons */
+.button {
+  @apply border-4 border-blue-900 bg-blue-900 rounded-full text-white py-1 px-4 uppercase font-medium focus:outline-none focus:border-blue-500;
+}

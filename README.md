@@ -1,2 +1,3 @@
 # potatizer
-Potato mood randomizer  🥔
+
+Generate your potato mood randomly with this without sense app 🥔

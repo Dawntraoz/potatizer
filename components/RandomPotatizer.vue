@@ -1,27 +1,29 @@
 <template>
   <div
-    class="w-panel max-w-full z-20 p-6 bg-white border-4 border-lime-200 shadow-lg rounded-lg"
+    class="w-panel max-w-full z-20 p-4 md:p-6 bg-white border-4 border-lime-200 shadow-lg rounded-lg"
   >
     <header>
-      <h1 class="font-bold text-2xl text-center uppercase">
+      <h1 class="font-bold text-xl md:text-2xl text-center uppercase">
         {{ title }}
       </h1>
     </header>
     <figure class="flex flex-col items-center py-6">
       <img
-        width="125"
-        :src="moodSelected.src || randomMood.src"
+        :src="require(`~/assets${moodSelected.src || randomMood.src}`)"
         :alt="`Your potato mood for today is ${
           moodSelected.name || randomMood.name
         }`"
+        class="h-32 md:h-52"
+        height="208"
+        width="160"
       />
     </figure>
     <footer class="text-center">
-      <button
-        class="bg-blue-900 rounded-md text-white py-2 px-4 uppercase font-medium"
-        @click="generateMood"
-      >
+      <button v-if="!moodSelected.src" class="button" @click="generateMood">
         Potative
+      </button>
+      <button v-if="moodSelected.src" class="button" @click="resetMood">
+        Reset
       </button>
     </footer>
   </div>
@@ -33,7 +35,6 @@ export default {
     return {
       title: 'Generate your potato mood for today',
       moodSelected: {},
-      randomMood: {},
       moods: [
         {
           name: 'laugh',
@@ -72,21 +73,30 @@ export default {
           src: '/moods/thug.svg',
         },
       ],
+      randomMood: {
+        name: 'laugh',
+        src: '/moods/laugh.svg',
+      },
     }
   },
   mounted() {
-    while (!this.moodSelected) {
-      setTimeout(() => {
-        const index = Math.random(0, this.moods.length - 1)
-        this.randomMood = this.moods[index]
-      }, 3000)
-    }
+    this.generateRandomMood()
   },
   methods: {
     generateMood() {
-      this.moodSelected = {
-        name: 'love',
-        src: '/moods/love.svg',
+      this.moodSelected = this.randomMood
+    },
+    resetMood() {
+      this.moodSelected = {}
+      this.generateRandomMood()
+    },
+    generateRandomMood() {
+      if (Object.keys(this.moodSelected).length === 0) {
+        setTimeout(() => {
+          const index = Math.floor(Math.random() * (this.moods.length - 1))
+          this.randomMood = this.moods[index]
+          this.generateRandomMood()
+        }, 100)
       }
     },
   },
