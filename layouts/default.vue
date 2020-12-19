@@ -9,6 +9,7 @@
     <footer>
       <a
         target="_blank"
+        class="fixed bottom-0 right-0 mb-4 mr-4"
         href="https://cloud.digitalocean.com/apps/new?repo=https://github.com/Dawntraoz/potatizer/tree/main"
       >
         <img
