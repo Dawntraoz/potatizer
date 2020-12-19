@@ -1,0 +1,9 @@
+name: cd
+static_sites:
+  - name: potatizer
+    github:
+      repo: Dawntraoz/potatizer
+      branch: main
+      deploy_on_push: true
+    build_command: yarn generate
+    output_dir: dist
