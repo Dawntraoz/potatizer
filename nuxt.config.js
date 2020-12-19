@@ -15,8 +15,46 @@ export default {
         content:
           'Generate your potato mood randomly with this without sense app',
       },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content:
+          'Generate your potato mood randomly with this without sense app',
+      },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Potatizer' },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'Potato mood | Potatizer',
+      },
       { name: 'msapplication-TileColor', content: '#a3e635' },
       { name: 'theme-color', content: '#a3e635' },
+      {
+        hid: 'image',
+        property: 'image',
+        content: '/social-card-potatizer.jpg',
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: '/social-card-potatizer.jpg',
+      },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      {
+        hid: 'og:publish_date',
+        name: 'publish_date',
+        property: 'og:publish_date',
+        content: '2020-12-19T00:00:00-0500',
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://potatizer.dawntraoz.com',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
