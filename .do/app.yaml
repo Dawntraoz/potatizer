@@ -1,6 +1,7 @@
 name: cd
 static_sites:
-  - build_command: yarn generate
+  - environment_slug: html
+    build_command: yarn generate
     github:
       repo: Dawntraoz/potatizer
       branch: main
