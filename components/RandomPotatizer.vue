@@ -25,6 +25,16 @@
       <button v-if="moodSelected.src" class="button" @click="resetMood">
         Reset
       </button>
+      <p class="text-blue-900 z-10 pt-4">
+        Design & Develop by
+        <a
+          href="https://www.dawntraoz.com"
+          target="_blank"
+          class="font-bold underline"
+        >
+          Dawntraoz
+        </a>
+      </p>
     </footer>
   </div>
 </template>

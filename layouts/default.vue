@@ -6,10 +6,12 @@
       height="100vh"
     />
     <Nuxt />
-    <footer>
+    <footer
+      class="fixed bottom-0 inset-x-0 mb-4 mx-4 flex flex-wrap justify-between items-center"
+    >
+      <p class="text-white">© {{ new Date().year }} Potatizer</p>
       <a
         target="_blank"
-        class="fixed bottom-0 right-0 mb-4 mr-4"
         href="https://cloud.digitalocean.com/apps/new?repo=https://github.com/Dawntraoz/potatizer/tree/main"
       >
         <img

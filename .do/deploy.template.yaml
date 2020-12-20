@@ -1,6 +1,6 @@
 spec:
   name: cd
-  static_sites:
+  services:
     - environment_slug: node-js
       build_command: yarn generate
       git:

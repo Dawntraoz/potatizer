@@ -7,7 +7,7 @@ module.exports = {
         title: ["'Quicksand'", 'sans-serif'],
       },
       width: {
-        panel: '360px',
+        panel: '420px',
       },
       colors: {
         lime: colors.lime,

@@ -1,5 +1,7 @@
 <template>
-  <div class="w-screen h-screen p-4 flex items-center justify-center">
+  <div
+    class="w-screen h-screen overflow-auto p-4 flex flex-col items-center justify-center"
+  >
     <RandomPotatizer />
   </div>
 </template>
