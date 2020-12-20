@@ -1,7 +1,8 @@
 spec:
   name: cd
   static_sites:
-    - build_command: yarn generate
+    - environment_slug: html
+      build_command: yarn generate
       git:
         branch: main
         repo_clone_url: https://github.com/Dawntraoz/potatizer.git
