@@ -1,5 +1,5 @@
 <template>
-  <div
+  <article
     class="w-panel max-w-full z-20 p-4 md:p-6 bg-white border-4 border-lime-200 shadow-lg rounded-lg"
   >
     <header>
@@ -30,13 +30,14 @@
         <a
           href="https://www.dawntraoz.com"
           target="_blank"
+          rel="noreferrer noopener"
           class="font-bold underline"
         >
           Dawntraoz
         </a>
       </p>
     </footer>
-  </div>
+  </article>
 </template>
 
 <script>
