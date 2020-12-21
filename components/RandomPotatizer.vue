@@ -103,7 +103,7 @@ export default {
     generateRandomMood() {
       if (Object.keys(this.moodSelected).length === 0) {
         setTimeout(() => {
-          const index = Math.floor(Math.random() * (this.moods.length - 1))
+          const index = Math.floor(Math.random() * this.moods.length)
           this.randomMood = this.moods[index]
           this.generateRandomMood()
         }, 100)
