@@ -1,9 +1,14 @@
+const vueJest = require('vue-jest/lib/template-compiler')
+
 module.exports = {
-  process() {
-    return 'module.exports = {};'
-  },
-  getCacheKey() {
-    // The output is always the same.
-    return 'svgTransform'
+  process(content) {
+    const { render } = vueJest({
+      content,
+      attrs: {
+        functional: false,
+      },
+    })
+
+    return `module.exports = { render: ${render} }`
   },
 }

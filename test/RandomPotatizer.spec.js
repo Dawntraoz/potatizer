@@ -30,7 +30,7 @@ describe('RandomPotatizer', () => {
   })
 
   test('should change randomMood each 100ms when generateRandomMood is called', async () => {
-    const mockMath = Object.create(global.Math)
+    const mockMath = { ...global.Math }
     mockMath.random = () => 0.5
     mockMath.floor = () => 5
     global.Math = mockMath
