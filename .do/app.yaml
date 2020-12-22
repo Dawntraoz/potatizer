@@ -1,6 +1,6 @@
 name: cd
-services:
-  - environment_slug: node-js
+static_sites:
+  - environment_slug: html
     build_command: yarn generate
     github:
       repo: Dawntraoz/potatizer
