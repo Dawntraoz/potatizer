@@ -16,6 +16,8 @@
         href="https://cloud.digitalocean.com/apps/new?repo=https://github.com/Dawntraoz/potatizer/tree/main"
       >
         <img
+          width="252"
+          height="40"
           src="https://mp-assets1.sfo2.digitaloceanspaces.com/deploy-to-do/do-btn-blue.svg"
           alt="Deploy to DigitalOcean"
         />

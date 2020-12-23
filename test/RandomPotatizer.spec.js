@@ -10,6 +10,9 @@ describe('RandomPotatizer', () => {
   beforeEach(() => {
     wrapper = shallowMount(RandomPotatizer, {
       localVue,
+      stubs: {
+        SharedNetworks: true,
+      },
     })
   })
 

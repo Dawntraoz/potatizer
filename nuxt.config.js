@@ -99,6 +99,7 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     '@nuxtjs/robots',
+    'vue-social-sharing/nuxt',
   ],
 
   pwa: {
