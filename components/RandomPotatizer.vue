@@ -49,44 +49,44 @@ export default {
       moodSelected: {},
       moods: [
         {
-          name: 'laugh',
+          name: 'Laugh 🤣🥔',
           src: '/moods/laugh.svg',
         },
         {
-          name: 'angry',
+          name: 'Angry 😡🥔',
           src: '/moods/angry.svg',
         },
         {
-          name: 'cry',
+          name: 'Cry 😫🥔',
           src: '/moods/cry.svg',
         },
         {
-          name: 'eing',
+          name: 'Eing 😕🥔',
           src: '/moods/eing.svg',
         },
         {
-          name: 'love',
+          name: 'Love 😍🥔',
           src: '/moods/love.svg',
         },
         {
-          name: 'mask',
+          name: 'Mask 😷🥔',
           src: '/moods/mask.svg',
         },
         {
-          name: 'sick',
+          name: 'Sick 🤢🥔',
           src: '/moods/sick.svg',
         },
         {
-          name: 'sleep',
+          name: 'Sleep 😴🥔',
           src: '/moods/sleep.svg',
         },
         {
-          name: 'thug',
+          name: 'Thug 😎🥔',
           src: '/moods/thug.svg',
         },
       ],
       randomMood: {
-        name: 'laugh',
+        name: 'Laugh 🤣🥔',
         src: '/moods/laugh.svg',
       },
     }
