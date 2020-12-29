@@ -125,6 +125,10 @@ export default {
     },
   },
 
+  env: {
+    gaKey: process.env.GA_KEY,
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 
