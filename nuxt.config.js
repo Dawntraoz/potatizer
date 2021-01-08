@@ -32,12 +32,12 @@ export default {
       {
         hid: 'image',
         property: 'image',
-        content: '/social-card-potatizer.jpg',
+        content: 'https://potatizer.dawntraoz.com/social-card-potatizer.jpg',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/social-card-potatizer.jpg',
+        content: 'https://potatizer.dawntraoz.com/social-card-potatizer.jpg',
       },
       {
         hid: 'twitter:card',
