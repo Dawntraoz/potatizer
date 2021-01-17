@@ -10,7 +10,19 @@
       class="fixed bottom-0 inset-x-0 mb-4 mx-4 flex flex-wrap justify-between items-center"
     >
       <p>© {{ new Date().getFullYear() }} Potatizer</p>
+      <p class="pl-2 mr-auto">
+        - Made with
+        <a
+          class="font-bold"
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://nuxtjs.org/"
+        >
+          Nuxt
+        </a>
+      </p>
       <a
+        class="pt-2 md:pt-0"
         target="_blank"
         rel="noreferrer noopener"
         href="https://cloud.digitalocean.com/apps/new?repo=https://github.com/Dawntraoz/potatizer/tree/main"

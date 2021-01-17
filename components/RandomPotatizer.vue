@@ -84,6 +84,14 @@ export default {
           name: 'Thug 😎🥔',
           src: '/moods/thug.svg',
         },
+        {
+          name: 'Antenna 📡🥔',
+          src: '/moods/antenna.svg',
+        },
+        {
+          name: 'Unicorn 🦄🥔',
+          src: '/moods/unicorn.svg',
+        },
       ],
       randomMood: {
         name: 'Laugh 🤣🥔',
